@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>شركة انجاز للخدمات الهندسية</title>
+	<meta name="description"
+		content="شركة انجاز للخدمات الهندسية متخصصة في تقديم حلول استراتيجية مبتكرة تسهم في تطوير الشركات في القطاعين العام والخاص.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		/* ========== RESET ========== */
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: 'Tajawal', sans-serif;
+			background: #fafbef;
+			color: #2a2927;
+			line-height: 1.7;
+			overflow-x: hidden;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		ul,
+		ol {
+			list-style: none;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
+
+		button {
+			cursor: pointer;
+			border: none;
+			font-family: inherit;
+		}
+
+		input {
+			font-family: inherit;
+			border: none;
+			outline: none;
+		}
+
+		/* ========== CSS VARIABLES ========== */
+		:root {
+			--brown-dark: #483421;
+			--brown-mid: #93703e;
+			--gold: #bfa463;
+			--gold-light: #d4be8a;
+			--cream: #fafbef;
+			--cream-dark: #f4f2e1;
+			--text-dark: #2a2927;
+			--white: #ffffff;
+			--shadow-sm: 0 2px 12px rgba(72, 52, 33, 0.08);
+			--shadow-md: 0 8px 30px rgba(72, 52, 33, 0.12);
+			--shadow-lg: 0 16px 50px rgba(72, 52, 33, 0.18);
+			--radius: 20px;
+			--radius-lg: 35px;
+			--transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		}
+
+		/* ========== ANIMATIONS ========== */
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(50px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes fadeInRight {
+			from {
+				opacity: 0;
+				transform: translateX(60px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes fadeInLeft {
+			from {
+				opacity: 0;
+				transform: translateX(-60px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes scaleIn {
+			from {
+				opacity: 0;
+				transform: scale(0.85);
+			}
+
+			to {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+
+		@keyframes slideDown {
+			from {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes float {
+
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-12px);
+			}
+		}
+
+		@keyframes shimmer {
+			0% {
+				background-position: -200% center;
+			}
+
+			100% {
+				background-position: 200% center;
+			}
+		}
+
+		@keyframes pulse {
+
+			0%,
+			100% {
+				transform: scale(1);
+				opacity: 0.6;
+			}
+
+			50% {
+				transform: scale(1.08);
+				opacity: 1;
+			}
+		}
+
+		@keyframes rotateIn {
+			from {
+				opacity: 0;
+				transform: rotate(-8deg) scale(0.9);
+			}
+
+			to {
+				opacity: 1;
+				transform: rotate(0) scale(1);
+			}
+		}
+
+		@keyframes countUp {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		/* Scroll reveal base */
+		.reveal {
+			opacity: 0;
+			transform: translateY(40px);
+			transition: opacity 0.8s ease, transform 0.8s ease;
+		}
+
+		.reveal.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.reveal-right {
+			opacity: 0;
+			transform: translateX(60px);
+			transition: opacity 0.8s ease, transform 0.8s ease;
+		}
+
+		.reveal-right.visible {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		.reveal-left {
+			opacity: 0;
+			transform: translateX(-60px);
+			transition: opacity 0.8s ease, transform 0.8s ease;
+		}
+
+		.reveal-left.visible {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		.reveal-scale {
+			opacity: 0;
+			transform: scale(0.85);
+			transition: opacity 0.8s ease, transform 0.8s ease;
+		}
+
+		.reveal-scale.visible {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		/* Stagger delays */
+		.delay-1 {
+			transition-delay: 0.1s;
+		}
+
+		.delay-2 {
+			transition-delay: 0.2s;
+		}
+
+		.delay-3 {
+			transition-delay: 0.3s;
+		}
+
+		.delay-4 {
+			transition-delay: 0.4s;
+		}
+
+		/* ========== TOP BAR ========== */
+		.top-bar {
+			background: var(--brown-mid);
+			color: var(--cream);
+			padding: 10px 0;
+			font-size: 14px;
+			position: relative;
+			z-index: 100;
+			animation: slideDown 0.6s ease forwards;
+		}
+
+		.top-bar .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 40px;
+		}
+
+		.top-bar .contact-info {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+
+		.top-bar .contact-info a {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			transition: color var(--transition);
+		}
+
+		.top-bar .contact-info a:hover {
+			color: var(--gold-light);
+		}
+
+		.top-bar .social-links {
+			display: flex;
+			gap: 12px;
+		}
+
+		.top-bar .social-links a {
+			width: 30px;
+			height: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.15);
+			transition: all var(--transition);
+			font-size: 14px;
+		}
+
+		.top-bar .social-links a:hover {
+			background: var(--gold);
+			transform: translateY(-2px);
+		}
+
+		/* ========== HEADER / NAVBAR ========== */
+		.header {
+			position: sticky;
+			top: 0;
+			z-index: 999;
+			background: rgba(72, 52, 33, 0.95);
+			backdrop-filter: blur(20px);
+			-webkit-backdrop-filter: blur(20px);
+			box-shadow: var(--shadow-md);
+			animation: slideDown 0.8s ease forwards;
+		}
+
+		.header .container {
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 40px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 80px;
+		}
+
+		.logo {
+			height: 60px;
+			transition: transform var(--transition);
+			transform: rotate(180deg);
+		}
+
+		.logo:hover {
+			transform: scale(1.05) rotate(180deg);
+		}
+
+		.nav-links {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+
+		.nav-links a {
+			color: var(--cream);
+			font-size: 16px;
+			font-weight: 500;
+			position: relative;
+			padding: 8px 0;
+			transition: color var(--transition);
+		}
+
+		.nav-links a::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0;
+			height: 2px;
+			background: var(--gold);
+			transition: width var(--transition);
+		}
+
+		.nav-links a:hover {
+			color: var(--gold);
+		}
+
+		.nav-links a:hover::after {
+			width: 100%;
+		}
+
+		.nav-links a.active {
+			color: var(--gold);
+			font-weight: 700;
+		}
+
+		.nav-links a.active::after {
+			width: 100%;
+		}
+
+		.nav-actions {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+		}
+
+		.lang-switch {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			color: var(--gold);
+			font-weight: 700;
+			font-size: 15px;
+			padding: 6px 14px;
+			border: 1px solid var(--gold);
+			border-radius: 25px;
+			transition: all var(--transition);
+			background: transparent;
+		}
+
+		.lang-switch:hover {
+			background: var(--gold);
+			color: var(--brown-dark);
+		}
+
+		.menu-btn {
+			display: none;
+			flex-direction: column;
+			gap: 5px;
+			background: none;
+			padding: 8px;
+		}
+
+		.menu-btn span {
+			width: 28px;
+			height: 3px;
+			background: var(--cream);
+			border-radius: 2px;
+			transition: all 0.3s;
+		}
+
+		/* ========== HERO ========== */
+		.hero {
+			position: relative;
+			min-height: 85vh;
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+			background: var(--brown-dark);
+		}
+
+		.hero-bg {
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+		}
+
+		.hero-bg img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			filter: brightness(0.5);
+			transition: transform 8s ease;
+		}
+
+		.hero:hover .hero-bg img {
+			transform: scale(1.05);
+		}
+
+		.hero-overlay {
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(135deg,
+					rgba(72, 52, 33, 0.85) 0%,
+					rgba(147, 112, 62, 0.5) 50%,
+					rgba(72, 52, 33, 0.7) 100%);
+			z-index: 1;
+		}
+
+		.hero-content {
+			position: relative;
+			z-index: 2;
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 40px;
+			width: 100%;
+		}
+
+		.hero-text {
+			max-width: 700px;
+			margin-right: 60px;
+		}
+
+		.hero-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			background: rgba(191, 164, 99, 0.2);
+			border: 1px solid rgba(191, 164, 99, 0.4);
+			color: var(--gold-light);
+			padding: 8px 20px;
+			border-radius: 30px;
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 24px;
+			animation: fadeInUp 0.8s ease 0.2s both;
+		}
+
+		.hero-badge .dot {
+			width: 8px;
+			height: 8px;
+			background: var(--gold);
+			border-radius: 50%;
+			animation: pulse 2s infinite;
+		}
+
+		.hero h1 {
+			color: var(--cream);
+			font-size: clamp(36px, 5vw, 64px);
+			font-weight: 800;
+			line-height: 1.3;
+			margin-bottom: 20px;
+			animation: fadeInUp 0.8s ease 0.4s both;
+		}
+
+		.hero h1 span {
+			color: var(--gold);
+		}
+
+		.hero-desc {
+			color: rgba(250, 251, 239, 0.8);
+			font-size: clamp(16px, 1.5vw, 20px);
+			line-height: 1.8;
+			margin-bottom: 36px;
+			animation: fadeInUp 0.8s ease 0.6s both;
+		}
+
+		.hero-actions {
+			display: flex;
+			gap: 16px;
+			flex-wrap: wrap;
+			animation: fadeInUp 0.8s ease 0.8s both;
+		}
+
+		/* ========== BUTTONS ========== */
+		.btn-primary {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			background: linear-gradient(135deg, var(--gold), var(--brown-mid));
+			color: var(--cream);
+			font-size: 16px;
+			font-weight: 700;
+			padding: 14px 36px;
+			border-radius: 30px;
+			transition: all var(--transition);
+			box-shadow: 0 4px 20px rgba(191, 164, 99, 0.3);
+			position: relative;
+			overflow: hidden;
+		}
+
+		.btn-primary::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+			transition: left 0.6s;
+		}
+
+		.btn-primary:hover::before {
+			left: 100%;
+		}
+
+		.btn-primary:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 8px 30px rgba(191, 164, 99, 0.4);
+		}
+
+		.btn-outline {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			background: transparent;
+			color: var(--cream);
+			font-size: 16px;
+			font-weight: 600;
+			padding: 14px 36px;
+			border-radius: 30px;
+			border: 2px solid rgba(250, 251, 239, 0.3);
+			transition: all var(--transition);
+		}
+
+		.btn-outline:hover {
+			border-color: var(--gold);
+			color: var(--gold);
+			transform: translateY(-3px);
+		}
+
+		/* ========== DECORATIVE SHAPES ========== */
+		.hero-decor {
+			position: absolute;
+			z-index: 2;
+			bottom: -2px;
+			left: 0;
+			right: 0;
+			height: 80px;
+			background: var(--cream);
+			clip-path: ellipse(55% 100% at 50% 100%);
+		}
+
+		.hero-float-shape {
+			position: absolute;
+			z-index: 1;
+			width: 120px;
+			height: 120px;
+			border: 2px solid rgba(191, 164, 99, 0.2);
+			border-radius: 30px;
+			animation: float 6s infinite ease-in-out;
+		}
+
+		.hero-float-shape:nth-child(1) {
+			top: 15%;
+			left: 8%;
+			animation-delay: 0s;
+			transform: rotate(20deg);
+		}
+
+		.hero-float-shape:nth-child(2) {
+			bottom: 25%;
+			left: 15%;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			animation-delay: 2s;
+		}
+
+		.hero-float-shape:nth-child(3) {
+			top: 30%;
+			left: 25%;
+			width: 50px;
+			height: 50px;
+			background: rgba(191, 164, 99, 0.1);
+			border: none;
+			border-radius: 50%;
+			animation-delay: 4s;
+		}
+
+		/* ========== SECTION COMMON ========== */
+		.section {
+			padding: 100px 0;
+		}
+
+		.section .container {
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 40px;
+		}
+
+		.section-header {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		.section-label {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			color: var(--gold);
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			margin-bottom: 12px;
+		}
+
+		.section-label::before,
+		.section-label::after {
+			content: '';
+			width: 30px;
+			height: 2px;
+			background: var(--gold);
+		}
+
+		.section-title {
+			color: var(--brown-dark);
+			font-size: clamp(28px, 3.5vw, 44px);
+			font-weight: 800;
+			line-height: 1.4;
+			margin-bottom: 16px;
+		}
+
+		.section-desc {
+			color: #6b6359;
+			font-size: clamp(16px, 1.3vw, 19px);
+			line-height: 1.8;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		/* ========== ABOUT SECTION ========== */
+		.about {
+			background: var(--cream);
+		}
+
+		.about-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 60px;
+			align-items: center;
+		}
+
+		.about-image {
+			position: relative;
+			border-radius: var(--radius-lg);
+			overflow: hidden;
+			box-shadow: var(--shadow-lg);
+		}
+
+		.about-image img {
+			width: 100%;
+			height: 450px;
+			object-fit: cover;
+			transition: transform 0.6s ease;
+		}
+
+		.about-image:hover img {
+			transform: scale(1.05);
+		}
+
+		.about-image::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			border: 3px solid var(--gold);
+			border-radius: var(--radius-lg);
+			opacity: 0;
+			transition: opacity var(--transition);
+		}
+
+		.about-image:hover::after {
+			opacity: 1;
+		}
+
+		.about-text h2 {
+			color: var(--brown-dark);
+			font-size: clamp(28px, 3vw, 42px);
+			font-weight: 800;
+			margin-bottom: 20px;
+			line-height: 1.3;
+		}
+
+		.about-text p {
+			color: #5a5148;
+			font-size: clamp(16px, 1.2vw, 19px);
+			line-height: 1.9;
+			margin-bottom: 30px;
+		}
+
+		.about-text p strong {
+			color: var(--brown-dark);
+			font-weight: 700;
+		}
+
+		/* ========== STATS ========== */
+		.stats-row {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			margin-top: 50px;
+		}
+
+		.stat-card {
+			text-align: center;
+			padding: 30px 20px;
+			background: var(--white);
+			border-radius: var(--radius);
+			box-shadow: var(--shadow-sm);
+			transition: all var(--transition);
+			border: 1px solid transparent;
+		}
+
+		.stat-card:hover {
+			transform: translateY(-8px);
+			box-shadow: var(--shadow-md);
+			border-color: var(--gold);
+		}
+
+		.stat-number {
+			display: flex;
+			align-items: baseline;
+			justify-content: center;
+			gap: 4px;
+			color: var(--brown-dark);
+			font-size: clamp(38px, 4vw, 60px);
+			font-weight: 800;
+			line-height: 1;
+			margin-bottom: 8px;
+		}
+
+		.stat-number .plus {
+			color: var(--gold);
+			font-size: 0.6em;
+		}
+
+		.stat-label {
+			color: var(--brown-mid);
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		/* ========== VISION / MISSION / VALUES ========== */
+		.vmv-section {
+			background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
+		}
+
+		.vmv-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+		}
+
+		.vmv-card {
+			padding: 40px 30px;
+			border-radius: var(--radius-lg);
+			position: relative;
+			overflow: hidden;
+			transition: all var(--transition);
+		}
+
+		.vmv-card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100px;
+			height: 100px;
+			background: radial-gradient(circle, rgba(191, 164, 99, 0.15), transparent 70%);
+			border-radius: 50%;
+			transition: all 0.6s;
+		}
+
+		.vmv-card:hover::before {
+			width: 200px;
+			height: 200px;
+		}
+
+		.vmv-card:hover {
+			transform: translateY(-8px);
+			box-shadow: var(--shadow-lg);
+		}
+
+		.vmv-card.dark {
+			background: var(--brown-dark);
+			color: var(--cream);
+		}
+
+		.vmv-card.gold {
+			background: var(--gold);
+			color: var(--cream);
+		}
+
+		.vmv-card.light {
+			background: var(--cream-dark);
+			color: var(--brown-dark);
+			border: 1px solid rgba(191, 164, 99, 0.2);
+		}
+
+		.vmv-card .card-icon {
+			width: 56px;
+			height: 56px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 16px;
+			margin-bottom: 20px;
+			font-size: 26px;
+		}
+
+		.vmv-card.dark .card-icon {
+			background: rgba(191, 164, 99, 0.2);
+		}
+
+		.vmv-card.gold .card-icon {
+			background: rgba(255, 255, 255, 0.2);
+		}
+
+		.vmv-card.light .card-icon {
+			background: rgba(72, 52, 33, 0.08);
+		}
+
+		.vmv-card h3 {
+			font-size: clamp(22px, 2vw, 30px);
+			font-weight: 700;
+			margin-bottom: 16px;
+		}
+
+		.vmv-card p {
+			font-size: clamp(15px, 1.1vw, 17px);
+			line-height: 1.9;
+			opacity: 0.9;
+		}
+
+		/* Values pills */
+		.values-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
+			margin-top: 20px;
+		}
+
+		.value-pill {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			padding: 10px 18px;
+			border-radius: 30px;
+			font-size: 14px;
+			font-weight: 600;
+			transition: all var(--transition);
+		}
+
+		.vmv-card.light .value-pill {
+			background: rgba(72, 52, 33, 0.06);
+			color: var(--brown-dark);
+		}
+
+		.vmv-card.light .value-pill:hover {
+			background: var(--brown-dark);
+			color: var(--cream);
+			transform: scale(1.05);
+		}
+
+		.value-pill .icon {
+			width: 24px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			font-size: 12px;
+		}
+
+		.vmv-card.light .value-pill .icon {
+			background: var(--gold);
+			color: var(--white);
+		}
+
+		/* ========== FOOTER ========== */
+		.footer {
+			position: relative;
+			background: var(--brown-dark);
+			color: var(--cream);
+			overflow: hidden;
+		}
+
+		.footer::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: url('assets/symbol-bg.png') center/cover no-repeat;
+			opacity: 0.08;
+		}
+
+		.footer-top {
+			position: relative;
+			z-index: 1;
+			padding: 80px 0 40px;
+		}
+
+		.footer-grid {
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 40px;
+			display: grid;
+			grid-template-columns: 1.4fr 1fr 1fr;
+			gap: 60px;
+		}
+
+		.footer-brand p {
+			color: rgba(250, 251, 239, 0.7);
+			font-size: 15px;
+			line-height: 1.9;
+			margin: 16px 0 24px;
+		}
+
+		.footer-brand .brand-name {
+			font-size: 22px;
+			font-weight: 800;
+			color: var(--gold);
+		}
+
+		.footer-social {
+			display: flex;
+			gap: 10px;
+		}
+
+		.footer-social a {
+			width: 42px;
+			height: 42px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background: rgba(191, 164, 99, 0.15);
+			font-size: 18px;
+			transition: all var(--transition);
+		}
+
+		.footer-social a:hover {
+			background: var(--gold);
+			transform: translateY(-4px) scale(1.1);
+		}
+
+		.footer h4 {
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			color: var(--gold);
+		}
+
+		.footer-links a {
+			display: block;
+			color: rgba(250, 251, 239, 0.7);
+			font-size: 15px;
+			padding: 6px 0;
+			transition: all var(--transition);
+		}
+
+		.footer-links a:hover {
+			color: var(--gold);
+			padding-right: 8px;
+		}
+
+		.newsletter-form {
+			display: flex;
+			border-radius: var(--radius);
+			overflow: hidden;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		.newsletter-form input {
+			flex: 1;
+			background: rgba(255, 255, 255, 0.1);
+			color: var(--cream);
+			padding: 14px 20px;
+			font-size: 14px;
+		}
+
+		.newsletter-form input::placeholder {
+			color: rgba(250, 251, 239, 0.4);
+		}
+
+		.newsletter-form button {
+			background: var(--gold);
+			color: var(--cream);
+			padding: 14px 28px;
+			font-size: 14px;
+			font-weight: 700;
+			transition: background var(--transition);
+		}
+
+		.newsletter-form button:hover {
+			background: var(--gold-light);
+		}
+
+		.footer-contact-item {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			color: rgba(250, 251, 239, 0.7);
+			font-size: 15px;
+			margin-bottom: 12px;
+			transition: color var(--transition);
+		}
+
+		.footer-contact-item:hover {
+			color: var(--gold);
+		}
+
+		.footer-contact-item .icon-circle {
+			width: 36px;
+			height: 36px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background: rgba(191, 164, 99, 0.15);
+			font-size: 14px;
+			flex-shrink: 0;
+		}
+
+		.footer-bottom {
+			position: relative;
+			z-index: 1;
+			border-top: 1px solid rgba(191, 164, 99, 0.15);
+			padding: 24px 0;
+			text-align: center;
+		}
+
+		.footer-bottom p {
+			color: rgba(250, 251, 239, 0.5);
+			font-size: 14px;
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 40px;
+		}
+
+		/* ========== SCROLL TO TOP ========== */
+		.scroll-top {
+			position: fixed;
+			bottom: 30px;
+			left: 30px;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--gold);
+			color: var(--cream);
+			border-radius: 50%;
+			font-size: 22px;
+			box-shadow: var(--shadow-md);
+			z-index: 100;
+			opacity: 0;
+			transform: translateY(20px);
+			transition: all var(--transition);
+			cursor: pointer;
+			border: none;
+		}
+
+		.scroll-top.show {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.scroll-top:hover {
+			background: var(--brown-dark);
+			transform: translateY(-4px);
+		}
+
+		/* ========== WHATSAPP FLOAT BUTTON ========== */
+		.whatsapp-float {
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			width: 56px;
+			height: 56px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #25D366;
+			color: var(--white);
+			border-radius: 50%;
+			font-size: 28px;
+			box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+			z-index: 100;
+			transition: all var(--transition);
+			animation: pulse 3s infinite;
+		}
+
+		.whatsapp-float:hover {
+			transform: scale(1.1);
+			box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+		}
+
+		/* ========== RESPONSIVE ========== */
+		@media (max-width: 1024px) {
+			.about-grid {
+				grid-template-columns: 1fr;
+				gap: 40px;
+			}
+
+			.about-image img {
+				height: 350px;
+			}
+
+			.vmv-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.stats-row {
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+			}
+
+			.footer-grid {
+				grid-template-columns: 1fr 1fr;
+				gap: 40px;
+			}
+
+			.hero-text {
+				margin-right: 0;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.nav-links {
+				display: none;
+			}
+
+			.menu-btn {
+				display: flex;
+			}
+
+			.top-bar .container {
+				flex-direction: column;
+				gap: 8px;
+			}
+
+			.hero {
+				min-height: 70vh;
+			}
+
+			.hero h1 {
+				font-size: 32px;
+			}
+
+			.section {
+				padding: 60px 0;
+			}
+
+			.stats-row {
+				grid-template-columns: 1fr;
+				gap: 16px;
+			}
+
+			.footer-grid {
+				grid-template-columns: 1fr;
+				gap: 30px;
+			}
+
+			.hero-float-shape {
+				display: none;
+			}
+
+			.hero-actions {
+				flex-direction: column;
+			}
+
+			.hero-actions .btn-primary,
+			.hero-actions .btn-outline {
+				text-align: center;
+				justify-content: center;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.header .container {
+				padding: 0 20px;
+			}
+
+			.section .container {
+				padding: 0 20px;
+			}
+
+			.footer-grid {
+				padding: 0 20px;
+			}
+
+			.footer-bottom p {
+				padding: 0 20px;
+			}
+
+			.hero-content {
+				padding: 0 20px;
+			}
+
+			.top-bar .container {
+				padding: 0 20px;
+			}
+		}
+
+		/* ========== MOBILE NAV ========== */
+		.mobile-nav {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(72, 52, 33, 0.98);
+			backdrop-filter: blur(20px);
+			z-index: 9999;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 24px;
+		}
+
+		.mobile-nav.active {
+			display: flex;
+		}
+
+		.mobile-nav a {
+			color: var(--cream);
+			font-size: 22px;
+			font-weight: 600;
+			transition: color var(--transition);
+		}
+
+		.mobile-nav a:hover {
+			color: var(--gold);
+		}
+
+		.mobile-nav .close-btn {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 44px;
+			height: 44px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 50%;
+			color: var(--cream);
+			font-size: 26px;
+			cursor: pointer;
+			border: none;
+			transition: all var(--transition);
+		}
+
+		.mobile-nav .close-btn:hover {
+			background: var(--gold);
+		}
+
+		/* ========== LOADING ANIMATION FOR NUMBERS ========== */
+		.counter {
+			display: inline;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- TOP BAR -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="contact-info">
+				<a href="tel:01080723674">
+					<span>📞</span>
+					<span>01080723674</span>
+				</a>
+				<span style="opacity: 0.4;">|</span>
+				<a href="tel:01040095158">
+					<span>📞</span>
+					<span>01040095158</span>
+				</a>
+			</div>
+
+			<!-- social links -->
+			<div class="social-links">
+				<a href="#" aria-label="فيسبوك"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+						<path
+							d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+					</svg></a>
+				<a href="#" aria-label="تويتر"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+						<path
+							d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+					</svg></a>
+				<a href="#" aria-label="انستقرام"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+						<path
+							d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+					</svg></a>
+				<a href="#" aria-label="لينكد ان"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+						<path
+							d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+					</svg></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="container">
+			<a href="#" class="logo-link" style="display: flex; align-items: center; gap: 12px;">
+				<img src="assets/symbol-mask-group.png" class="logo" alt="شركة انجاز للخدمات الهندسية" />
+				<span style="color: var(--gold); font-size: 20px; font-weight: 800; white-space: nowrap;" data-i18n="hero_badge">شركة انجاز</span>
+			</a>
+
+			<nav class="nav-links">
+				<a href="#" class="active" data-i18n="nav_home">الرئيسية</a>
+				<a href="#about" data-i18n="nav_about">من نحن</a>
+				<a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
+			</nav>
+
+			<div class="nav-actions">
+				<button class="lang-switch" id="langSwitch" aria-label="Switch Language">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M5 8l6 6" />
+						<path d="M4 14l6-6 2-3" />
+						<path d="M2 5h12" />
+						<path d="M7 2h1" />
+						<path d="M22 22l-5-10-5 10" />
+						<path d="M14 18h6" />
+					</svg>
+					<span id="langLabel">EN</span>
+				</button>
+				<button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+
+		</div>
+	</header>
+
+	<!-- MOBILE NAV -->
+	<div class="mobile-nav" id="mobileNav">
+		<button class="close-btn" id="closeNav" aria-label="إغلاق القائمة">✕</button>
+		<a href="#" onclick="closeMobileNav()" data-i18n="nav_home">الرئيسية</a>
+		<a href="#about" onclick="closeMobileNav()" data-i18n="nav_about">من نحن</a>
+		<a href="#contact" onclick="closeMobileNav()" data-i18n="nav_contact">اتصل بنا</a>
+	</div>
+
+	<!-- HERO -->
+	<section class="hero" id="hero">
+		<div class="hero-bg">
+			<img src="assets/symbol-hero-video.png" alt="خلفية" />
+		</div>
+		<div class="hero-overlay"></div>
+
+		<div class="hero-float-shape"></div>
+		<div class="hero-float-shape"></div>
+		<div class="hero-float-shape"></div>
+
+		<div class="hero-content">
+			<div class="hero-text">
+				<div class="hero-badge">
+					<span class="dot"></span>
+					<span data-i18n="hero_badge">شركة انجاز للخدمات الهندسية</span>
+				</div>
+				<h1 data-i18n="hero_title" data-i18n-html="true">ننتهج <span>المسار الصحيح</span></h1>
+				<p class="hero-desc" data-i18n="hero_desc">
+					متخصصون في تقديم حلول استراتيجية مبتكرة تسهم في تطوير الشركات في القطاعين العام والخاص، بنهج استراتيجي وخبرة عميقة ورؤية مستقبلية.
+				</p>
+				<div class="hero-actions">
+					<a href="#contact" class="btn-primary">
+						<span data-i18n="hero_cta">احجز استشارتك الآن</span>
+						<span class="arrow-icon">←</span>
+					</a>
+					<a href="#about" class="btn-outline" data-i18n="hero_about_btn">
+						تعرف علينا
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="hero-decor"></div>
+	</section>
+
+	<!-- ABOUT -->
+	<section class="section about" id="about">
+		<div class="container">
+			<div class="about-grid">
+				<div class="about-text reveal-right">
+					<div class="section-label">
+						<span data-i18n="about_label">من نحن</span>
+					</div>
+					<h2 data-i18n="about_title">نبذة عنا</h2>
+					<p data-i18n="about_desc" data-i18n-html="true">
+						<strong>شركة انجاز للخدمات الهندسية</strong> متخصصة في تقديم حلول استراتيجية مبتكرة تسهم في تطوير الشركات في القطاعين العام والخاص، نعمل
+						على تمكين القطاعات التنفيذية وتعزيز كفاءة الأعمال بنهج استراتيجي وخبرة عميقة ورؤية مستقبلية لضمان تحسين الأداء وتحقيق الأهداف بطرق مستدامة
+						وفعالة لعملائنا.
+					</p>
+					<a href="#" class="btn-primary"><span data-i18n="about_more">اعرف المزيد</span> <span class="arrow-icon">←</span></a>
+				</div>
+				<div class="about-image reveal-left">
+					<img src="assets/symbol-symbol.png" alt="نبذة عن شركة انجاز" />
+				</div>
+			</div>
+
+			<!-- STATS -->
+			<div class="stats-row">
+				<div class="stat-card reveal delay-1">
+					<div class="stat-number">
+						<span class="plus">+</span>
+						<span class="counter" data-target="14">0</span>
+					</div>
+					<p class="stat-label" data-i18n="stat_experience">سنوات الخبرة</p>
+				</div>
+				<div class="stat-card reveal delay-2">
+					<div class="stat-number">
+						<span class="plus">+</span>
+						<span class="counter" data-target="450">0</span>
+					</div>
+					<p class="stat-label" data-i18n="stat_clients">العملاء</p>
+				</div>
+				<div class="stat-card reveal delay-3">
+					<div class="stat-number">
+						<span class="plus">+</span>
+						<span class="counter" data-target="35">0</span>
+					</div>
+					<p class="stat-label" data-i18n="stat_accreditations">الاعتمادات</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- VISION / MISSION / VALUES -->
+	<section class="section vmv-section" id="vmv">
+		<div class="container">
+			<div class="section-header reveal">
+				<div class="section-label"><span data-i18n="vmv_label">ما يميزنا</span></div>
+				<h2 class="section-title" data-i18n="vmv_title">رؤيتنا ورسالتنا وقيمنا</h2>
+				<p class="section-desc" data-i18n="vmv_desc">نؤمن بأن النجاح يبدأ برؤية واضحة واستراتيجية مدروسة</p>
+			</div>
+
+			<div class="vmv-grid">
+				<!-- رؤيتنا -->
+				<div class="vmv-card dark reveal delay-1">
+					<div class="card-icon">👁️</div>
+					<h3 data-i18n="vision_title">رؤيتنا</h3>
+					<p data-i18n="vision_desc">نؤمن بأن النجاح يبدأ برؤية واضحة واستراتيجية مدروسة، نحن في فكرة التطوير نكرّس خبراتنا لتمكين الشركات من تحقيق
+						أهدافها، ومواجهة تحديات
+						السوق، وتحقيق نمو مستدام.</p>
+				</div>
+
+				<!-- رسالتنا -->
+				<div class="vmv-card gold reveal delay-2">
+					<div class="card-icon">🎯</div>
+					<h3 data-i18n="mission_title">رسالتنا</h3>
+					<p data-i18n="mission_desc">تقديم حلول استشارية مبتكرة ومصممة خصيصاً لتلبية احتياجات عملائنا من القطاعين العام والخاص، وتحقيق تأثير ملموس
+						يعزز الكفاءة ويزيد من
+						الربحية.</p>
+				</div>
+
+				<!-- قيمنا -->
+				<div class="vmv-card light reveal delay-3">
+					<div class="card-icon">⭐</div>
+					<h3 data-i18n="values_title">قيمنا</h3>
+					<p data-i18n="values_desc">قيمنا هي الأساس الذي نرتكز عليه، نلتزم بالاحترافية، نبدع بالابتكار، ونمكّن لتحقيق النجاح لعملائنا.</p>
+					<div class="values-list">
+						<div class="value-pill">
+							<span class="icon">✓</span>
+							<span data-i18n="value_empowerment">التمكين</span>
+						</div>
+						<div class="value-pill">
+							<span class="icon">✓</span>
+							<span data-i18n="value_integration">التكامل</span>
+						</div>
+						<div class="value-pill">
+							<span class="icon">✓</span>
+							<span data-i18n="value_partnership">الشراكة</span>
+						</div>
+						<div class="value-pill">
+							<span class="icon">✓</span>
+							<span data-i18n="value_commitment">الالتزام</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="footer" id="contact">
+		<div class="footer-top">
+			<div class="footer-grid">
+
+				<!-- Brand + Social -->
+				<div class="footer-brand reveal delay-3">
+					<div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+						<a href="#" class="footer-logo-link">
+							<img src="assets/symbol-mask-group.png" class="footer-logo" alt="شركة انجاز" style="height: 50px; transform: rotate(180deg);" />
+						</a>
+						<span class="brand-name" data-i18n="footer_brand" style="margin: 0;">شركة انجاز</span>
+					</div>
+					<p data-i18n="footer_desc" data-i18n-html="true">
+						قبل ما تبدأ أي بناء....
+						هل تعرف أن نقص المستندات ممكن يوقف مشروعك شهور ؟
+						معانا بنراجع ملف الترخيص قبل التقديم علشان نوفرلك وقتك وفلوسك 💪
+						📩ابعتلنا تفاصيل مشروعك واحنا نساعدك
+						تواصل معانا واتساب على الارقام 01040095158 - 01080723674
+					</p>
+					<div class="footer-social">
+						<a href="#" aria-label="فيسبوك"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+							</svg></a>
+						<a href="#" aria-label="تويتر"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+							</svg></a>
+						<a href="https://wa.me/201040095158" target="_blank" rel="noopener" aria-label="واتساب"><svg width="16" height="16" viewBox="0 0 24 24"
+								fill="currentColor">
+								<path
+									d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+							</svg></a>
+						<a href="#" aria-label="انستقرام"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+							</svg></a>
+					</div>
+				</div>
+
+
+				<!-- Quick Links -->
+				<div class="reveal delay-2">
+					<h4 data-i18n="footer_links_title">روابط سريعة</h4>
+					<div class="footer-links">
+						<a href="#" data-i18n="nav_home">الرئيسية</a>
+						<a href="#about" data-i18n="nav_about">من نحن</a>
+						<a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p data-i18n="footer_copyright">شركة انجاز للخدمات الهندسية جميع الحقوق محفوظة 2026 ©</p>
+		</div>
+	</footer>
+
+	<!-- WhatsApp Float -->
+	<a href="https://wa.me/201040095158" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل واتساب">
+		<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+			<path
+				d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+		</svg>
+	</a>
+
+	<!-- Scroll to Top -->
+	<button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">↑</button>
+
+	<script>
+		// ======= SCROLL REVEAL =======
+		const revealElements = document.querySelectorAll('.reveal, .reveal-right, .reveal-left, .reveal-scale');
+
+		const revealObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+					// Don't unobserve to allow re-animation if needed
+				}
+			});
+		}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+		revealElements.forEach(el => revealObserver.observe(el));
+
+		// ======= COUNTER ANIMATION =======
+		const counters = document.querySelectorAll('.counter');
+		let counterAnimated = false;
+
+		const counterObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting && !counterAnimated) {
+					counterAnimated = true;
+					counters.forEach(counter => {
+						const target = +counter.getAttribute('data-target');
+						const duration = 2000;
+						const step = target / (duration / 16);
+						let current = 0;
+
+						const updateCounter = () => {
+							current += step;
+							if (current < target) {
+								counter.textContent = Math.ceil(current);
+								requestAnimationFrame(updateCounter);
+							} else {
+								counter.textContent = target;
+							}
+						};
+						updateCounter();
+					});
+				}
+			});
+		}, { threshold: 0.5 });
+
+		counters.forEach(c => counterObserver.observe(c));
+
+		// ======= SCROLL TOP BUTTON =======
+		const scrollTopBtn = document.getElementById('scrollTop');
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 400) {
+				scrollTopBtn.classList.add('show');
+			} else {
+				scrollTopBtn.classList.remove('show');
+			}
+		});
+		scrollTopBtn.addEventListener('click', () => {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+
+		// ======= HEADER SHRINK ON SCROLL =======
+		const header = document.getElementById('header');
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 100) {
+				header.style.boxShadow = '0 4px 30px rgba(72,52,33,0.2)';
+			} else {
+				header.style.boxShadow = 'var(--shadow-md)';
+			}
+		});
+
+		// ======= MOBILE NAV =======
+		const menuBtn = document.getElementById('menuBtn');
+		const mobileNav = document.getElementById('mobileNav');
+		const closeNav = document.getElementById('closeNav');
+
+		menuBtn.addEventListener('click', () => {
+			mobileNav.classList.add('active');
+			document.body.style.overflow = 'hidden';
+		});
+
+		function closeMobileNav() {
+			mobileNav.classList.remove('active');
+			document.body.style.overflow = '';
+		}
+
+		closeNav.addEventListener('click', closeMobileNav);
+
+		// ======= SMOOTH SCROLL FOR ANCHOR LINKS =======
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					e.preventDefault();
+					target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			});
+		});
+
+		// ======= PARALLAX HERO (subtle) =======
+		window.addEventListener('scroll', () => {
+			const hero = document.querySelector('.hero-bg img');
+			if (hero) {
+				const scrolled = window.scrollY;
+				hero.style.transform = `scale(1.05) translateY(${scrolled * 0.15}px)`;
+			}
+		});
+
+		// ======= LANGUAGE TRANSLATION =======
+		const translations = {
+			ar: {
+				nav_home: 'الرئيسية',
+				nav_about: 'من نحن',
+				nav_contact: 'اتصل بنا',
+				hero_badge: 'شركة انجاز للخدمات الهندسية',
+				hero_title: 'ننتهج <span>المسار الصحيح</span>',
+				hero_desc: 'متخصصون في تقديم حلول استراتيجية مبتكرة تسهم في تطوير الشركات في القطاعين العام والخاص، بنهج استراتيجي وخبرة عميقة ورؤية مستقبلية.',
+				hero_cta: 'احجز استشارتك الآن',
+				hero_about_btn: 'تعرف علينا',
+				about_label: 'من نحن',
+				about_title: 'نبذة عنا',
+				about_desc: '<strong>شركة انجاز للخدمات الهندسية</strong> متخصصة في تقديم حلول استراتيجية مبتكرة تسهم في تطوير الشركات في القطاعين العام والخاص، نعمل على تمكين القطاعات التنفيذية وتعزيز كفاءة الأعمال بنهج استراتيجي وخبرة عميقة ورؤية مستقبلية لضمان تحسين الأداء وتحقيق الأهداف بطرق مستدامة وفعالة لعملائنا.',
+				about_more: 'اعرف المزيد',
+				stat_experience: 'سنوات الخبرة',
+				stat_clients: 'العملاء',
+				stat_accreditations: 'الاعتمادات',
+				vmv_label: 'ما يميزنا',
+				vmv_title: 'رؤيتنا ورسالتنا وقيمنا',
+				vmv_desc: 'نؤمن بأن النجاح يبدأ برؤية واضحة واستراتيجية مدروسة',
+				vision_title: 'رؤيتنا',
+				vision_desc: 'نؤمن بأن النجاح يبدأ برؤية واضحة واستراتيجية مدروسة، نحن في فكرة التطوير نكرّس خبراتنا لتمكين الشركات من تحقيق أهدافها، ومواجهة تحديات السوق، وتحقيق نمو مستدام.',
+				mission_title: 'رسالتنا',
+				mission_desc: 'تقديم حلول استشارية مبتكرة ومصممة خصيصاً لتلبية احتياجات عملائنا من القطاعين العام والخاص، وتحقيق تأثير ملموس يعزز الكفاءة ويزيد من الربحية.',
+				values_title: 'قيمنا',
+				values_desc: 'قيمنا هي الأساس الذي نرتكز عليه، نلتزم بالاحترافية، نبدع بالابتكار، ونمكّن لتحقيق النجاح لعملائنا.',
+				value_empowerment: 'التمكين',
+				value_integration: 'التكامل',
+				value_partnership: 'الشراكة',
+				value_commitment: 'الالتزام',
+				footer_brand: 'شركة انجاز',
+				footer_desc: 'قبل ما تبدأ أي بناء.... هل تعرف أن نقص المستندات ممكن يوقف مشروعك شهور ؟ معانا بنراجع ملف الترخيص قبل التقديم علشان نوفرلك وقتك وفلوسك 💪<br>📩ابعتلنا تفاصيل مشروعك واحنا نساعدك<br>تواصل معانا واتساب على الارقام 01040095158 - 01080723674',
+				footer_links_title: 'روابط سريعة',
+				footer_copyright: 'شركة انجاز للخدمات الهندسية جميع الحقوق محفوظة 2026 ©',
+			},
+			en: {
+				nav_home: 'Home',
+				nav_about: 'About Us',
+				nav_contact: 'Contact Us',
+				hero_badge: 'Anjas Engineering',
+				hero_title: 'We Follow <span>The Right Path</span>',
+				hero_desc: 'Specialists in delivering innovative strategic solutions that contribute to developing companies in both public and private sectors, with a strategic approach, deep expertise, and a forward-looking vision.',
+				hero_cta: 'Book Your Consultation',
+				hero_about_btn: 'Learn About Us',
+				about_label: 'About Us',
+				about_title: 'About Us',
+				about_desc: '<strong>Anjas Engineering Services</strong> specializes in providing innovative strategic solutions that contribute to developing companies in both public and private sectors. We work to empower executive sectors and enhance business efficiency with a strategic approach, deep expertise, and a forward-looking vision to ensure performance improvement and achieving goals in sustainable and effective ways for our clients.',
+				about_more: 'Learn More',
+				stat_experience: 'Years of Experience',
+				stat_clients: 'Clients',
+				stat_accreditations: 'Accreditations',
+				vmv_label: 'What Sets Us Apart',
+				vmv_title: 'Our Vision, Mission & Values',
+				vmv_desc: 'We believe success starts with a clear vision and a well-planned strategy',
+				vision_title: 'Our Vision',
+				vision_desc: 'We believe that success begins with a clear vision and a well-thought-out strategy. We dedicate our expertise to empowering companies to achieve their goals, face market challenges, and achieve sustainable growth.',
+				mission_title: 'Our Mission',
+				mission_desc: 'Providing innovative consulting solutions specifically designed to meet the needs of our clients in both public and private sectors, creating a tangible impact that enhances efficiency and increases profitability.',
+				values_title: 'Our Values',
+				values_desc: 'Our values are the foundation we build upon. We are committed to professionalism, we innovate with creativity, and we empower our clients to achieve success.',
+				value_empowerment: 'Empowerment',
+				value_integration: 'Integration',
+				value_partnership: 'Partnership',
+				value_commitment: 'Commitment',
+				footer_brand: 'Anjas Company',
+				footer_desc: 'Before you start any construction.... Did you know that missing documents can delay your project for months? We review your licensing file before submission to save you time and money 💪<br>📩 Send us your project details and we\'ll help you<br>Contact us on WhatsApp: 01040095158 - 01080723674',
+				footer_links_title: 'Quick Links',
+				footer_copyright: '© 2026 Anjas Engineering Services. All Rights Reserved.',
+			}
+		};
+
+		let currentLang = 'ar';
+
+		function switchLanguage(lang) {
+			currentLang = lang;
+			const html = document.documentElement;
+			const langLabel = document.getElementById('langLabel');
+
+			// Set direction and lang attribute
+			html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+			html.setAttribute('lang', lang);
+
+			// Update button label
+			langLabel.textContent = lang === 'ar' ? 'EN' : 'AR';
+
+			// Flip arrow icons direction
+			document.querySelectorAll('.arrow-icon').forEach(el => {
+				el.textContent = lang === 'ar' ? '←' : '→';
+			});
+
+			// Translate all elements with data-i18n
+			document.querySelectorAll('[data-i18n]').forEach(el => {
+				const key = el.getAttribute('data-i18n');
+				const text = translations[lang][key];
+				if (text !== undefined) {
+					// Smooth fade transition
+					el.style.transition = 'opacity 0.3s ease';
+					el.style.opacity = '0';
+					setTimeout(() => {
+						if (el.getAttribute('data-i18n-html') === 'true') {
+							el.innerHTML = text;
+						} else {
+							el.textContent = text;
+						}
+						el.style.opacity = '1';
+					}, 300);
+				}
+			});
+
+			// Update font for English
+			document.body.style.fontFamily = lang === 'ar'
+				? "'Tajawal', sans-serif"
+				: "'Inter', 'Segoe UI', sans-serif";
+		}
+
+		// Language switch button handler
+		document.getElementById('langSwitch').addEventListener('click', () => {
+			const newLang = currentLang === 'ar' ? 'en' : 'ar';
+			switchLanguage(newLang);
+		});
+	</script>
+</body>
+</html>
